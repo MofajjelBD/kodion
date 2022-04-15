@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kodion</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script type="text/javascript">
+
+      $(function() {
+
+        $(".nav-link").click(function () {
+
+          let nav = $(".navbar-collapse");
+          if (nav.hasClass("show")) {
+            nav.removeClass("show");
+          }
+
+
+        })
+
+
+      })
+  </script>
+  <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+
+        window.addEventListener('scroll', function () {
+
+          if (window.scrollY > 200) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+          }
+        });
+	});
+	// DOMContentLoaded  end
+  </script>
+  <style type="text/css">
+    .fixed-top {
+      top: -40px;
+      transform: translateY(40px);
+      transition: transform .3s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== { HEADER }==========  -->
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="col-lg-2 col-md-3 col-sm-3 col-4 text-start"> <a class="navbar-brand" href="index.html"><img
+            class="w-50" alt="Logo" src="images/Logo.png"></a> </div>
+      <div class="col-lg-1 col-md-2 col-sm-2 col-3 text-end">
+        <div id="mySidebar" class="sidemenubar"> <a href="javascript:void(0)" class="closebtn"
+            onclick="closeNav()">×</a>
+          <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="smart-grid.html">Smart Grid</a> </li>
+            <li> <a href="storage.html">Storage</a> </li>
+            <li> <a href="solar-firm.html">Solar Farm</a> </li>
+          </ul>
+        </div>
+        <div id="mainsidemenu">
+          <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+      </div>
+    </div>
+    <!-- container-fluid.// -->
+  </nav>
+  <!-- end header -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <section class="hero align-items-center overlay d-lg-flex position-relative">
+      <div class="container-fluid">
+        <!-- Heading -->
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="mb-5"> <img class="" alt="hero-vartical-dots" src="images/hero-vartical-dots.png" width="10">
+              <h1 class="display-4 mb-3"> We are an IT and Engineering Consulting Firm </h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut lab.. </p>
+              <div class="d-block mb-2 social-icons"> <a aria-label="Facebook link" href="#"> <img
+                    src="images/Facebook.png" alt="Facebook
+"> </a> <a aria-label="Linkedin link" href="#"> <img src="images/Linkedin.png" alt="Linkedin
+"> </a> <a aria-label="Skype link" href="#"> <img src="images/Skype.png" alt="Skype
+"> </a> <a aria-label="Instragram link" href="#"> <img src="images/Instragram.png" alt="Instragram
+"> </a> </div>
+            </div>
+            <div class="d-grid d-sm-flex gap-3"> </div>
+          </div>
+          <!-- End Col -->
+          <!-- End Title & Description -->
+
+          <div class="col-md-6 col-lg-5 col-sm-12 offset-sm-0 offset-lg-1 hero-img">
+
+            <!-- Hero Image -->
+
+            <img class="img-fluid" alt="hero-image" src="images/hero-img.jpg">
+
+            <!-- End Hero Image -->
+
+          </div>
+        </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- =========={ WELCOME }==========  -->
+    <section class="welcome pt-5 px-3 px-lg-0 px-md-0 px-sm-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 col-md-3 col-lg-3">
+            <h1>Welcome!</h1>
+            <img class="w-50 float-start mt-3" alt="welcome-dots" src="images/welcome-dots.png">
+          </div>
+          <div class="col-sm-8 col-md-9 col-lg-9">
+            <p class="mt-5">Kodion Consulting offers various top-class IT and engineering solutions. We have the goal to
+              combine innovation with with proven technology standards to create experiences that reflect your brand and
+              expertise. Currently, we are based in the USA, China and Nigeria. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Welcome -->
+
+    <!-- =========={ SMART-GRID-SYSTEM }==========  -->
+
+    <section class="smartgridsystem pt-5 px-3 px-lg-0 px-md-0 px-sm-0">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-5 ydb-box py-5 px-5 mb-5 mb-lg-0">
+            <h1 class="text-center mt-2">SMART Grid System</h1>
+            <p class="text-white text-left mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+              viverra maecenas accumsan lacus vel facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+              Risus commodo viverra maecenas accumsan lacus vel facilisisQuis ipsum suspendisse ultrices gravida. Risus
+              commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            <img class="w-50 float-end" alt="Smart-Grid-System-dot" src="images/Smart-Grid-System-dot.png">
+          </div>
+          <div class="col-lg-7">
+            <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+              <div class="mb-4 mb-lg-0">
+                <div class="card text-center"> <img src="images/Clean-Energy-icon.png" class="card-img-top mx-auto" alt="Clean Energy
+
+">
+                  <div class="card-body">
+                    <h5 class="card-title">Clean Energy </h5>
+                    <p class="card-text text-white">Smart Grid System would provide an energy that is clean and
+                      environmentally friendly. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 mb-lg-0">
+                <div class="card text-center"> <img src="images/Improved-Efficiency-icon.png"
+                    class="card-img-top mx-auto" alt="Improved Efficiency
+
+">
+                  <div class="card-body">
+                    <h5 class="card-title">Improved Efficiency </h5>
+                    <p class="card-text text-white">Smart Grid System will reduce the losses of energy during
+                      transmission and distribution </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 mb-lg-0">
+                <div class="card text-center"> <img src="images/Advanced-System-icon.png" class="card-img-top mx-auto"
+                    alt="Advanced System
+
+">
+                  <div class="card-body">
+                    <h5 class="card-title">Advanced System </h5>
+                    <p class="card-text text-white">Smart Grid System will enhance stability and reliance of energy
+                      availability </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"> <img class="w-100" alt="SMART-Grid-System" src="images/SMART-Grid-System-image.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Smart Grid System -->
+
+    <!-- =========={ EXPERTISE }==========  -->
+    <section class="expertise py-5 px-3 px-lg-0 px-md-0 px-sm-0">
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center mb-5 mt-2">Our Expertise</h1>
+          </div>
+        </div>
+        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+          <div class="mb-4 mb-lg-0">
+            <div class="card text-center"> <img src="images/Software-Development-icon.png" class="card-img-top mx-auto"
+                alt="Software Development
+">
+              <div class="card-body">
+                <h5 class="card-title">Software Development </h5>
+                <p class="card-text text-white">We have an experienced team of software developers that can work to
+                  develop an efficient software for this project. </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 mb-lg-0">
+            <div class="card text-center"> <img src="images/Engineering-icon.png" class="card-img-top mx-auto" alt="Engineering
+">
+              <div class="card-body">
+                <h5 class="card-title">Engineering</h5>
+                <p class="card-text text-white">Our engineering team has advanced skills and experience to bring
+                  innovation to this project. </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 mb-lg-0">
+            <div class="card text-center"> <img src="images/AI-IoT-icon.png" class="card-img-top mx-auto" alt="AI/IoT
+">
+              <div class="card-body">
+                <h5 class="card-title">AI/IoT</h5>
+                <p class="card-text text-white">Our AI experts are proficient in various AI and IoT systems that will
+                  enable making this smart project a success. </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 mb-lg-0">
+            <div class="card text-center"> <img src="images/Big-Data-icon.png" class="card-img-top mx-auto" alt="Big Data
+">
+              <div class="card-body">
+                <h5 class="card-title">Big Data </h5>
+                <p class="card-text text-white">Our data scientists and engineers have the required expertise to design,
+                  implement, and maintain a big data system that would help accomplish the goals of smart grid. </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 mb-lg-0">
+            <div class="card text-center"> <img src="images/Embedded-Systems-icon.png" class="card-img-top mx-auto" alt="Embedded Systems
+">
+              <div class="card-body">
+                <h5 class="card-title">Embedded Systems </h5>
+                <p class="card-text text-white">We have a team of IT professionals and engineers that combine software
+                  and hardware use to solve existing problems. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Expertise -->
+
+    <!-- =========={ TECH-PHIL }==========  -->
+
+    <section class="tech-phil">
+      <!-- =========={ OUR-TECHNOLOGY }==========  -->
+
+      <section class="technology py-5">
+        <div class="container-fluid py-3 px-4 px-lg-0 px-md-0 px-sm-0">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-sm-12">
+              <h1 class="text-left mt-2">Our Technology</h1>
+              <p class="text-white text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                commodo viverra maecenas accumsan lacus vel facilisis Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed d. </p>
+            </div>
+            <div class="col-md-12 col-lg-5 col-sm-12 otgray-box offset-sm-0 offset-lg-1 py-5 px-5">
+              <div class="card mb-3">
+                <div class="row g-0 align-items-center">
+                  <div class="col-4 col-md-3 col-sm-3"> <img src="images/Sodium-Ion-(NA+)-Battery-icon .png"
+                      class="img-fluid rounded-start" alt="Sodium Ion (NA+) Battery
+"> </div>
+                  <div class="col-8 col-md-9 col-sm-9">
+                    <div class="card-body">
+                      <h5 class="card-title text-start">Sodium Ion (NA+) Battery </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row g-0 align-items-center">
+                  <div class="col-8 col-md-9 col-sm-9">
+                    <div class="card-body">
+                      <h5 class="card-title text-end">Inverter and Charge Control </h5>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 col-sm-3"> <img src="images/Charge-Control-icon.png"
+                      class="img-fluid rounded-start" alt="Inverter and Charge Control
+"> </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row g-0 align-items-center">
+                  <div class="col-4 col-md-3 col-sm-3"> <img src="images/turbine-generator-icon.png"
+                      class="img-fluid rounded-start" alt="Wind turbine generator
+"> </div>
+                  <div class="col-8 col-md-9 col-sm-9">
+                    <div class="card-body">
+                      <h5 class="card-title text-start">Wind turbine generator </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row g-0 align-items-center">
+                  <div class="col-8 col-md-9 col-sm-9">
+                    <div class="card-body">
+                      <h5 class="card-title text-end">Microwave System &amp; Solar Farms </h5>
+                    </div>
+                  </div>
+                  <div class="col-4 col-md-3 col-sm-3"> <img src="images/System&amp;Solar-Farms-icon.png"
+                      class="img-fluid rounded-start" alt="Microwave System &amp; Solar Farms
+"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Technology -->
+
+      <!-- =========={ OUR-PHILOSOPHY }==========  -->
+
+      <section class="philosophy py-5 px-3 px-lg-0 px-md-0 px-sm-0">
+        <div class="container-fluid py-5 px-5">
+          <div class="row">
+            <div class="col">
+              <h1 class="text-center mt-2">Our Philosophy</h1>
+              <p class="text-white text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            </div>
+          </div>
+          <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+            <div class="mb-4 mb-lg-0">
+              <div class="card text-center"> <img src="images/Eliminate-Dependencies-icon.png"
+                  class="card-img-top mx-auto" alt="Eliminate Dependencies
+">
+                <div class="card-body">
+                  <h5 class="card-title">Eliminate Dependencies </h5>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 mb-lg-0">
+              <div class="card text-center"> <img src="images/Minimize-Costs-icon.png" class="card-img-top mx-auto" alt="Minimize Costs
+
+">
+                <div class="card-body">
+                  <h5 class="card-title">Minimize Costs </h5>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 mb-lg-0">
+              <div class="card text-center"> <img src="images/Leverage-Tech-Use-icon.png" class="card-img-top mx-auto"
+                  alt="Leverage Tech Use
+
+">
+                <div class="card-body">
+                  <h5 class="card-title">Leverage Tech Use </h5>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 mb-lg-0">
+              <div class="card text-center"> <img src="images/Solution-is-the-Priority-icon.png"
+                  class="card-img-top mx-auto" alt="Solution is the Priority
+
+">
+                <div class="card-body">
+                  <h5 class="card-title">Solution is the Priority </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Our-Philosophy -->
+
+    </section>
+
+    <!-- End Tech-Phil -->
+
+    <!-- =========={ OUR-TEAM }==========  -->
+
+    <section class="team py-5">
+      <div class="container-fluid py-3 px-4 px-lg-0 px-md-0 px-sm-0">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 col-sm-6 otblack-box py-5 px-5 mb-md-3 mb-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card text-center"> <img src="images/user1.jpg" class="card-img-top mx-auto" alt="Eliminate Dependencies
+">
+                  <div class="card-body">
+                    <div class="card-social mb-2"> <a aria-label="Facebook link" href="#"> <img
+                          src="images/Facebook.png" alt="Facebook
+"> </a> <a aria-label="Linkedin link" href="#"> <img src="images/Linkedin.png" alt="Linkedin
+"> </a> <a aria-label="Skype link" href="#"> <img src="images/Skype.png" alt="Skype
+"> </a> <a aria-label="Instragram link" href="#"> <img src="images/Instragram.png" alt="Instragram
+"> </a> </div>
+                    <h5 class="card-title">Person no 1</h5>
+                    <p class="card-text">CEO Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card text-center"> <img src="images/user1.jpg" class="card-img-top mx-auto" alt="Eliminate Dependencies
+">
+                  <div class="card-body">
+                    <div class="card-social mb-2"> <a aria-label="Facebook link" href="#"> <img
+                          src="images/Facebook.png" alt="Facebook
+"> </a> <a aria-label="Linkedin link" href="#"> <img src="images/Linkedin.png" alt="Linkedin
+"> </a> <a aria-label="Skype link" href="#"> <img src="images/Skype.png" alt="Skype
+"> </a> <a aria-label="Instragram link" href="#"> <img src="images/Instragram.png" alt="Instragram
+"> </a> </div>
+                    <h5 class="card-title">Person no 1</h5>
+                    <p class="card-text">CEO Company</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5 col-sm-6 offset-sm-0 offset-lg-1">
+            <h1 class="text-center mt-2">Our Team</h1>
+            <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+              viverra maecenas accumsan lacus vel facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              d. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Our-Team -->
+
+    <!-- end main -->
+    <!-- =========={ FOOTER }==========  -->
+    <footer class="text-white">
+      <div class="container-fluid pt-3">
+        <div class="d-flex flex-wrap justify-content-between  py-3">
+          <p>All Rights Reserved © kodionenergy 2022</p>
+          <ul class="nav justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </main>
+  <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("mainsidemenu").style.marginRight = "250px";
+}
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("mainsidemenu").style.marginRight= "0";
+}
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storage</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        <script type="text/javascript">
+
+            $(function() {
+
+                $(".nav-link").click(function () {
+
+                    let nav = $(".navbar-collapse");
+                    if (nav.hasClass("show")) {
+                        nav.removeClass("show");
+                    }
+
+
+                })
+
+
+            })
+    </script>
+    <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+
+                window.addEventListener('scroll', function () {
+
+                    if (window.scrollY > 200) {
+                        document.getElementById('navbar_top').classList.add('fixed-top');
+                        // add padding top to show content behind navbar
+                        navbar_height = document.querySelector('.navbar').offsetHeight;
+                        document.body.style.paddingTop = navbar_height + 'px';
+                    } else {
+                        document.getElementById('navbar_top').classList.remove('fixed-top');
+                        // remove padding top from body
+                        document.body.style.paddingTop = '0';
+                    }
+                });
+	});
+	// DOMContentLoaded  end
+    </script>
+    <style type="text/css">
+        .fixed-top {
+            top: -40px;
+            transform: translateY(40px);
+            transition: transform .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ========== { HEADER }==========  -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-4 text-start"> <a class="navbar-brand" href="index.html"><img
+                        class="w-50" alt="Logo" src="images/Logo.png"></a> </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 col-3 text-end">
+                <div id="mySidebar" class="sidemenubar"> <a href="javascript:void(0)" class="closebtn"
+                        onclick="closeNav()">×</a>
+                    <ul>
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="smart-grid.html">Smart Grid</a> </li>
+                        <li> <a href="storage.html">Storage</a> </li>
+                        <li> <a href="solar-firm.html">Solar Farm</a> </li>
+                    </ul>
+                </div>
+                <div id="mainsidemenu">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
+            </div>
+        </div>
+        <!-- container-fluid.// -->
+    </nav>
+    <!-- end header -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <!-- Hero -->
+        <section class="storage_hero hero align-items-center overlay d-lg-flex position-relative">
+            <div class="container-fluid">
+                <!-- Heading -->
+                <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-3 col-sm-12">
+                        <div class="my-5 p-5 text-center">
+                            <h1 class="display-4 mb-3">Storage</h1>
+                            <p class="lead">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse
+                                pariatur duis deserunt mollit dolore cillum minim tempor enim.</p>
+                        </div>
+                        <div class="d-grid d-sm-flex gap-3"> </div>
+                    </div>
+                    <!-- End Col -->
+                    <!-- End Title & Description -->
+                </div>
+                <!-- End Row -->
+            </div>
+        </section>
+        <!-- End Hero -->
+
+        <!-- =========={ WELCOME }==========  -->
+        <section class="welcome storage pt-5 px-3 px-lg-0 px-md-0 px-sm-0">
+            <div class="container-fluid">
+                <div class="row hight-20">
+                </div>
+            </div>
+        </section>
+
+        <!-- End Welcome -->
+
+        <!-- ==========smart grid==========  -->
+
+        <section class="smartgridsystem pt-5 px-3 px-lg-0 px-md-0 px-sm-0">
+            <div class="container-fluid">
+                <div class="row align-items-center pb-3">
+                    <div class="col-lg-5 ydb-box py2 px-3 mb-5 mb-lg-0">
+                        <h1 class="text-center mt-2">SMART Grid System</h1>
+                        <p class="text-white text-left mb-5">Smart grid is the intelligence of power grid, also known as
+                            "power grid 2.0". It is built on the basis of integrated, high-speed two-way communication
+                            network. Through the application of advanced sensing and measurement technology, advanced
+                            equipment technology, advanced control method and advanced decision support system
+                            technology, it can realize the reliability, safety, economy, high efficiency and reliability
+                            of power grid. The goal of environment-friendly and safe use, its main features include
+                            self-healing, encouraging and including users, resisting attacks, providing power quality to
+                            meet the needs of users in the 21st century, allowing access to various forms of power
+                            generation, starting the power market and optimizing and efficient operation of assets.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col"> <img class="w-100" alt="SMART-Grid-System" src="images/grid-galary.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End smart grid -->
+
+        <!-- ==========smart grid 2==========  -->
+
+        <section class="team py-5">
+            <div class="container-fluid">
+                <div class="row align-items-center pb-3">
+                    <div class="col-lg-7">
+                        <div class="row pb-4">
+                            <div class="col"> <img class="w-100" alt="SMART-Grid-System" src="images/grid-galary-2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ydb-box otblack-box py2 px-3 mb-5 mb-lg-0">
+                        <h1 class="text-center mt-2">SMART Grid System</h1>
+                        <p class="text-white text-left mb-5">Smart grid is the intelligence of power grid, also known as
+                            "power grid 2.0". It is built on the basis of integrated, high-speed two-way communication
+                            network. Through the application of advanced sensing and measurement technology, advanced
+                            equipment technology, advanced control method and advanced decision support system
+                            technology, it can realize the reliability, safety, economy, high efficiency and reliability
+                            of power grid. The goal of environment-friendly and safe use, its main features include
+                            self-healing, encouraging and including users, resisting attacks, providing power quality to
+                            meet the needs of users in the 21st century, allowing access to various forms of power
+                            generation, starting the power market and optimizing and efficient operation of assets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End smart grid 2-->
+        <!-- ==========smart grid==========  -->
+
+        <section class="smartgridsystem pt-5 px-3 px-lg-0 px-md-0 px-sm-0">
+            <div class="container-fluid">
+                <div class="row align-items-center pb-3">
+                    <div class="col-lg-5 ydb-box py2 px-3 mb-5 mb-lg-0">
+                        <h1 class="text-center mt-2">SMART Grid System</h1>
+                        <p class="text-white text-left mb-5">Smart grid is the intelligence of power grid, also known as
+                            "power grid 2.0". It is built on the basis of integrated, high-speed two-way communication
+                            network. Through the application of advanced sensing and measurement technology, advanced
+                            equipment technology, advanced control method and advanced decision support system
+                            technology, it can realize the reliability, safety, economy, high efficiency and reliability
+                            of power grid. The goal of environment-friendly and safe use, its main features include
+                            self-healing, encouraging and including users, resisting attacks, providing power quality to
+                            meet the needs of users in the 21st century, allowing access to various forms of power
+                            generation, starting the power market and optimizing and efficient operation of assets.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col"> <img class="w-100" alt="SMART-Grid-System" src="images/grid-galary.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End smart grid -->
+
+        <!-- end main -->
+        <!-- =========={ FOOTER }==========  -->
+        <footer class="text-white">
+            <div class="container-fluid pt-3">
+                <div class="d-flex flex-wrap justify-content-between  py-3">
+                    <p>All Rights Reserved © kodionenergy 2022</p>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Contact Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </main>
+    <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mainsidemenu").style.marginRight = "250px";
+}
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mainsidemenu").style.marginRight= "0";
+}
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

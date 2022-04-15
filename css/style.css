@@ -1,0 +1,527 @@
+@font-face {
+	font-family: 'Neue Haas Grotesk Display Pro';
+	src: url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.eot');
+	src: local('NeueHaasDisplay-Mediu'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff2') format('woff2'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.woff') format('woff'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Mediu.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Display Pro';
+	src: url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot');
+	src: local('NeueHaasDisplay-Light'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff2') format('woff2'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.woff') format('woff'), url('../fonts/NeueHaasDisplay/NeueHaasDisplay-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Neue Haas Grotesk Display Pro' !important;
+	font-weight: 300 !important;
+	font-style: normal !important;
+	font-size: 20px !important;
+}
+
+.container-fluid {
+	padding: 0% 2% !important;
+	width: 96% !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Neue Haas Grotesk Display Pro' !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+
+.navbar.bg-dark {
+	background: rgba(0, 0, 0, 0) !important;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+#navbar_top.fixed-top {
+	background: rgba(0, 0, 0, 1) !important;
+	z-index: 9999999999999;
+}
+
+#main_nav .navbar-nav .nav-link {
+	color: #fff;
+}
+
+#main_nav .navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+	color: #e9a430 !important;
+}
+
+.hero {
+	min-height: 100vh;
+	background-image: url(../images/hero-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	padding-top: 78px;
+}
+
+.hero:after {
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.hero .container-fluid {
+	z-index: 9;
+	position: relative;
+}
+
+.hero h1 {
+	color: #e9a430;
+}
+
+.hero p {
+	color: #fff;
+}
+
+.hero .social-icons img {
+	margin-right: 8px;
+	max-width: 32px;
+}
+
+.hero .hero-img img {
+	border-width: 8px 8px 8px 8px;
+	border-color: #e9a430;
+	border-style: dashed;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.welcome {
+	position: relative;
+	background-image: url(../images/welcome-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.welcome:after {
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 14%, #000000 100%);
+	z-index: 99;
+}
+
+.welcome .container-fluid {
+	z-index: 999;
+	position: relative;
+}
+
+.welcome h1 {
+	color: #e9a430;
+}
+
+.welcome p {
+	color: #fff;
+}
+
+.expertise {
+	background-image: url(../images/Our-Expertise-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.expertise h1 {
+	color: #e9a430;
+}
+
+.expertise .container-fluid {
+	background: rgba(0, 0, 0, 0.80);
+	border-radius: 35px;
+}
+
+.expertise .card {
+	background: transparent;
+	border: none;
+}
+
+.expertise .card img {
+	width: 50%;
+	border: 3px solid #e9a430;
+	padding: 18px;
+	border-radius: 100%;
+}
+
+.expertise .card .card-title {
+	color: #e9a430;
+}
+
+.expertise .card .card-text {
+	font-size: 18px;
+}
+
+.smartgridsystem {
+	background: #000202;
+}
+
+.smartgridsystem h1 {
+	color: #e9a430;
+}
+
+.smartgridsystem .container-fluid {
+	background: rgba(0, 0, 0, 0.80);
+	border-radius: 35px;
+}
+
+.smartgridsystem .card {
+	background: transparent;
+	border: none;
+}
+
+.smartgridsystem .card img {
+	width: 50%;
+	border: 3px solid #e9a430;
+	padding: 18px;
+	border-radius: 100%;
+}
+
+.smartgridsystem .card .card-title {
+	color: #e9a430;
+}
+
+.smartgridsystem .card .card-text {
+	font-size: 18px;
+}
+
+.ydb-box {
+	border-width: 8px 8px 8px 8px;
+	border-color: #e9a430;
+	border-style: dashed;
+	border-radius: 50px 25px 50px 25px;
+}
+
+.philosophy {}
+
+.philosophy h1 {
+	color: #e9a430;
+}
+
+.philosophy .container-fluid {
+	background: rgba(0, 0, 0, 0.80);
+	border-radius: 35px;
+}
+
+.philosophy .card {
+	background: transparent;
+	border: 4px solid #777;
+	border-radius: 18px;
+}
+
+.philosophy .card img {
+	max-width: 75%;
+}
+
+.philosophy .card .card-title {
+	color: #fff;
+	font-weight: 300 !important;
+}
+
+.team {
+	background-image: url(../images/Our-Team-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.team h1 {
+	color: #e9a430;
+}
+
+.team .card {
+	background: transparent;
+	border: none;
+}
+
+.team .card img.card-img-top {
+	width: 50%;
+	border: 3px dashed #e9a430;
+	padding: 5px;
+	border-radius: 100%;
+}
+
+.team .card .card-title {
+	color: #fff;
+	font-weight: 300 !important;
+}
+
+.team .card .card-text {
+	color: #fff;
+	font-weight: normal;
+}
+
+.team .card-social img {
+	max-width: 24px;
+	margin-right: 8px;
+}
+
+.otblack-box {
+	background: rgba(0, 0, 0, 0.70);
+	border-radius: 50px;
+}
+
+.technology {}
+
+.technology h1 {
+	color: #e9a430;
+}
+
+.technology .card {
+	background: transparent;
+	border: none;
+}
+
+.technology .card img {
+	width: 100%;
+	border: 3px solid #000;
+	padding: 15px;
+	border-radius: 100% !important;
+}
+
+.technology .card .card-title {
+	color: #000;
+}
+
+.otgray-box {
+	background: rgba(202, 202, 202, 0.70);
+	border-radius: 50px;
+}
+
+.tech-phil {
+	background-image: url(../images/Our-tech-phill-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+footer {
+	position: relative;
+	background-image: url(../images/footer-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+footer:after {
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 99;
+}
+
+footer .container-fluid {
+	z-index: 999;
+	position: relative;
+}
+
+footer h5 {
+	color: #e9a430;
+	text-transform: uppercase;
+}
+
+footer ul li a.nav-link {
+	color: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+footer ul li a.nav-link:hover {
+	color: #e9a430;
+}
+
+footer .social-icons ul li img {
+	margin-right: 8px;
+	max-width: 32px;
+}
+
+.btn-primary {
+	background-color: #e9a430 !important;
+	border-color: #e9a430 !important;
+}
+
+.sidemenubar {
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background: #000;
+	overflow-x: visible;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidemenubar ul li {
+	list-style-type: none;
+}
+
+.sidemenubar a {
+	text-align: center;
+	padding: 8px 32px 8px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidemenubar a:hover {
+	color: #e9a430;
+}
+
+.sidemenubar .closebtn {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	font-size: 36px;
+	margin-right: 50px;
+}
+
+#mainsidemenu .openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+#mainsidemenu .openbtn:hover {
+	background-color: #444;
+}
+
+#mainsidemenu {
+	transition: margin-right .5s;
+	padding: 16px;
+}
+
+/*==============================================
+  Add more css at grid,storage,solar page start
+================================================*/
+.grid_hero.hero {
+	background-image: url(../images/smart-grid-baner.png);
+}
+
+.grid_hero.hero:after {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.storage_hero.hero {
+	background-image: url(../images/storage-hero-baner.png);
+}
+
+.storage_hero.hero:after {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.solar_hero.hero {
+	background-image: url(../images/solar-hero-baner.png);
+}
+
+.solar_hero.hero:after {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+
+.welcome.grid,
+.welcome.storage,
+.welcome.solar {
+	height: 100px;
+}
+
+.welcome.grid {
+	background-image: url(../images/smart-grid-baner.png);
+}
+
+.welcome.grid:after {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 14%, #000000 100%);
+}
+
+.welcome.storage {
+	background-image: url(../images/storage-hero-baner.png);
+}
+
+.welcome.storage:after {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 14%, #000000 100%);
+}
+
+.welcome.solar {
+	background-image: url(../images/solar-hero-baner.png);
+}
+
+.welcome.solar:after {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 14%, #000000 100%);
+}
+
+.bg-and-round {
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 30px;
+}
+
+/*==============================================
+  Add more css at grid,storage,solar page end
+================================================ */
+
+@media screen and (max-height: 450px) {
+	.sidemenubar {
+		padding-top: 15px;
+	}
+
+	.sidemenubar a {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.navbar.bg-dark {
+		background: rgba(0, 0, 0, 0.98) !important;
+		z-index: 9999999999;
+	}
+
+	.hero {
+		min-height: auto;
+	}
+
+	#mainsidemenu {
+		padding: 0px;
+	}
+}
